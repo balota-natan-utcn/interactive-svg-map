@@ -6,7 +6,37 @@
 body
 {
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px;
 }
+
+#partDisplay
+{
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+#partDisplay h3
+{
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#selectedPartName
+{
+    font-weight: bold;
+    color: #007bff;
+}
+
 svg
 {
     width: 100%;
@@ -27,4 +57,17 @@ svg path
     cursor: pointer;
     transition: 0.4s;
     stroke-width: 1.67102;
+}
+
+.active-cow-part
+{
+    fill: #dc3545;
+    stroke: #dc3545;
+    stroke-width: 2;
+    transition: fill 0.4s, stroke 0.4s, stroke-width 0.4s;
+}
+
+.active-cow-part:hover
+{
+    fill: #c82333;
 }
